@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.iaf.test.TestLoginToRenaissance">
+        <methods>
+          <include name="positiveLoginTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
+          <include name="endReport"/>
+          <include name="mathAppTest"/>
+          <include name="setEnv"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.iaf.test.TestLoginToRenaissance -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

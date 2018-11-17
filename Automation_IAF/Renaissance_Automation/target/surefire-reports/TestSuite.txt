@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 103.703 s <<< FAILURE! - in TestSuite
+positiveLoginTest(com.iaf.test.TestLogin)  Time elapsed: 33.884 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Profile Name is not as Expected expected [true] but found [false]
+	at com.iaf.test.TestLogin.positiveLoginTest(TestLogin.java:39)
+

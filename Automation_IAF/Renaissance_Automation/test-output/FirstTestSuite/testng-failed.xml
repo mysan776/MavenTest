@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [FirstTestSuite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.iaf.base.TestListner"/>
+  </listeners>
+  <test name="LoginTest-CH(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.iaf.test.TestLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
+          <include name="positiveLoginTest"/>
+          <include name="endReport"/>
+          <include name="setEnv"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.iaf.test.TestLogin -->
+    </classes>
+  </test> <!-- LoginTest-CH(failed) -->
+  <test name="LoginTest-FF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <exclude name="negative"/>
+        <exclude name="broken"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.iaf.test.TestLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
+          <include name="positiveLoginTest"/>
+          <include name="endReport"/>
+          <include name="setEnv"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.iaf.test.TestLogin -->
+    </classes>
+  </test> <!-- LoginTest-FF(failed) -->
+</suite> <!-- Failed suite [FirstTestSuite] -->

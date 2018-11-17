@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FirstTestSuite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.iaf.base.TestListner"></listener>
+	</listeners>	
+
+		<test name="LoginTest-CH">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.iaf.test.TestLogin">
+			</class>
+		</classes>
+		
+	</test>	
+	
+</suite>
+
