@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-FirstTestSuite">
-              <span class="suite-name border-failed">FirstTestSuite</span>
+              <span class="suite-name border-passed">FirstTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-FirstTestSuite">
-                    <span>D:\Automation_IAF\Renaissance_Automation\src\test\resources\testng.xml</span>
+                    <span>D:\MyGitProject\Automation_IAF\Renaissance_Automation\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-FirstTestSuite">
-                    <span>2 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-FirstTestSuite" class="hide-methods failed suite-FirstTestSuite"> (hide)</a> <!-- hide-methods failed suite-FirstTestSuite -->
-                      <a href="#" panel-name="suite-FirstTestSuite" class="show-methods failed suite-FirstTestSuite"> (show)</a> <!-- show-methods failed suite-FirstTestSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-FirstTestSuite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FirstTestSuite" title="com.iaf.test.TestLogin" hash-for-method="positiveLoginTest">positiveLoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-FirstTestSuite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +102,7 @@
                     <div class="method-list-content passed suite-FirstTestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FirstTestSuite" title="com.iaf.test.TestLogin" hash-for-method="negativeLoginTest({no=2, description=inavlid pssword, password=password, email=dashsany})">negativeLoginTest({no=2, description=inavlid pssword, password=password, email=dashsany})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FirstTestSuite" title="com.iaf.test.TestLogin" hash-for-method="negativeLoginTest({no=1, description=inavlid pssword, password=password, email=dashsany})">negativeLoginTest({no=1, description=inavlid pssword, password=password, email=dashsany})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-FirstTestSuite" title="com.iaf.test.TestLogin" hash-for-method="positiveLoginTest">positiveLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-FirstTestSuite -->
@@ -136,30 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-FirstTestSuite" class="panel FirstTestSuite">
-          <div class="suite-FirstTestSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.iaf.test.TestLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="positiveLoginTest">
-                  </a> <!-- positiveLoginTest -->
-                  <span class="method-name">positiveLoginTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Profile Name is not as Expected expected [true] but found [false]
-	at com.iaf.test.TestLogin.positiveLoginTest(TestLogin.java:39)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FirstTestSuite-class-failed -->
           <div class="suite-FirstTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -168,18 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="negativeLoginTest({no=2, description=inavlid pssword, password=password, email=dashsany})">
-                  </a> <!-- negativeLoginTest({no=2, description=inavlid pssword, password=password, email=dashsany}) -->
-                  <span class="method-name">negativeLoginTest</span>
-                  <span class="parameters">({no=2, description=inavlid pssword, password=password, email=dashsany})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="negativeLoginTest({no=1, description=inavlid pssword, password=password, email=dashsany})">
-                  </a> <!-- negativeLoginTest({no=1, description=inavlid pssword, password=password, email=dashsany}) -->
-                  <span class="method-name">negativeLoginTest</span>
-                  <span class="parameters">({no=1, description=inavlid pssword, password=password, email=dashsany})</span>
+                  <a name="positiveLoginTest">
+                  </a> <!-- positiveLoginTest -->
+                  <span class="method-name">positiveLoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,7 +135,7 @@
         </div> <!-- panel FirstTestSuite -->
         <div panel-name="test-xml-FirstTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Automation_IAF\Renaissance_Automation\src\test\resources\testng.xml</span>
+            <span class="header-content">D:\MyGitProject\Automation_IAF\Renaissance_Automation\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,14 +173,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">negative</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">negativeLoginTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">positive</span>
               <br/>
               <div class="method-in-group">
@@ -256,24 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'positiveLoginTest')
 data.setCell(0, 2, 'com.iaf.test.TestLogin')
-data.setCell(0, 3, 33785);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'negativeLoginTest')
-data.setCell(1, 2, 'com.iaf.test.TestLogin')
-data.setCell(1, 3, 26599);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'negativeLoginTest')
-data.setCell(2, 2, 'com.iaf.test.TestLogin')
-data.setCell(2, 3, 20378);
+data.setCell(0, 3, 27941);
 window.suiteTableData['FirstTestSuite']= { tableData: data, tableDiv: 'times-div-FirstTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-FirstTestSuite">
               </div> <!-- times-div-FirstTestSuite -->
             </div> <!-- times-div -->
@@ -305,50 +237,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@51081592)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4439f31e)</span>
                 <span class="method-start">435 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">449 ms</span>
+                <span class="method-start">453 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">positiveLoginTest</span>
-                <span class="method-start">7346 ms</span>
+                <span class="method-start">6199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=positiveLoginTest status=FAILURE method=TestLogin.positiveLoginTest()[pri:1, instan...)</span>
-                <span class="method-start">41232 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">42970 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">negativeLoginTest({no=1, description=inavlid pssword, password=password, email=dashsany})</span>
-                <span class="method-start">48076 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=negativeLoginTest status=SUCCESS method=TestLogin.negativeLoginTest(java.util.Map)[...)</span>
-                <span class="method-start">68454 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">69199 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">negativeLoginTest({no=2, description=inavlid pssword, password=password, email=dashsany})</span>
-                <span class="method-start">74192 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=negativeLoginTest status=SUCCESS method=TestLogin.negativeLoginTest(java.util.Map)[...)</span>
-                <span class="method-start">100791 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=positiveLoginTest status=SUCCESS method=TestLogin.positiveLoginTest()[pri:1, instan...)</span>
+                <span class="method-start">34141 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">101563 ms</span>
+                <span class="method-start">35180 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

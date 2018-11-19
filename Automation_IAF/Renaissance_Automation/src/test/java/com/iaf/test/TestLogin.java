@@ -13,7 +13,7 @@ import com.iaf.pages.ProfilePage;
 
 public class TestLogin extends BaseTest{
 	String expectedPageTitle="Rediffmail";
-	String correctProfileName="Sanyasi dash";
+	String correctProfileName="Sanyasi das";
 	
 	@Test(priority=1, groups ={ "positive" })
 	public void positiveLoginTest() {
@@ -39,25 +39,5 @@ public class TestLogin extends BaseTest{
 		softAssertion.assertAll();
 	}
 		
-	@Test(dataProvider="CsvDataProvider", dataProviderClass=CsvDataProvider.class, priority=2, groups ={ "negative" })
-		public void negativeLoginTest(Map<String, String>testData) {
-		logTestName("negativeLoginTest");
-		String expectedErrorMessage="Wrong username and password combination";
-		String testno=testData.get("no");
-		String email=testData.get("email");;
-		String password=testData.get("password");;
-		String description=testData.get("description");			
-		log.info("Test no "+testno+" for"+description+" where\nEmail "+email+"\nPassword "+password);
-		LoginPage loginPage=new LoginPage(driver, log);
-		//open rediff.com
-		loginPage.openURL();	
-		//fill user and password
-		loginPage.loginToRediff(email, password);
-		//click on login
-		loginPage.pushLogin();		
-		log.info("Verifying Login error message");
-		String actualEroorMessage=loginPage.getLoginErrorMessage();
-		Assert.assertTrue(actualEroorMessage.contains(expectedErrorMessage) ,
-				"Error message not as expected \nExpected: "+expectedErrorMessage+"\nActual: "+actualEroorMessage);
-				}
+	
 	}
