@@ -1,0 +1,4 @@
+ WARN [2018-11-19 09:43:04,579] (ProjectAddEvaluator.java:visit:84) - Unable to add skip builder flag to added project 'P/RemoteSystemsTempFiles': Resource '/RemoteSystemsTempFiles' is not open. Cause:
+ (1) Resource '/RemoteSystemsTempFiles' is not open.
+ WARN [2018-11-19 09:43:04,651] (ProjectAddEvaluator.java:visit:99) - Unable to add skip builder flag to added project 'P/RemoteSystemsTempFiles': Resource '/RemoteSystemsTempFiles' is not open. Cause:
+ (1) Resource '/RemoteSystemsTempFiles' is not open.
