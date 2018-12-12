@@ -85,3 +85,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-11-19 09:54:19.110
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.salesforce.ide.core 2 0 2018-11-19 10:35:05.269
+!MESSAGE  WARN [2018-11-19 10:35:05,145] (ConnectionFactory.java:clearCache:217) - No cached connections
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-11-19 10:35:05.995
+!MESSAGE  WARN [2018-11-19 10:35:05,503] (DescribeObjectRegistry.java:clearCache:661) - No cached describes
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-11-19 10:35:06.032
+!MESSAGE  WARN [2018-11-19 10:35:05,997] (MetadataFactory.java:clearCache:126) - No cached metadata stubs
+

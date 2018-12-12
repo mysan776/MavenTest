@@ -21,7 +21,8 @@ public class TestLogin extends BaseTest{
 		logTestName("positiveLoginTest");
 		LoginPage loginPage=new LoginPage(driver, log);
 		//open rediff.com
-		loginPage.openURL();	
+		loginPage.openURL();
+		log.info("Opened rediff.com");		
 		//fill user and password
 		loginPage.loginToRediff("testsan123", "San@123");
 		//click on login
