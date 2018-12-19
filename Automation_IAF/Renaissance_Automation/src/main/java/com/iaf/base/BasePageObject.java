@@ -22,7 +22,7 @@ public class BasePageObject<T> {
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	protected Logger log;
-	
+	//commented
 	protected BasePageObject(WebDriver driver,Logger log){
 		this.driver=driver;
 		this.log=log;
